@@ -5,6 +5,7 @@ import View from '../components/board/product/View';
 import PageHeader from 'components/PageHeader';
 import {MDBContainer} from 'mdbreact';
 import * as event from'../service/event';
+import { Helmet } from "react-helmet";
 // css, scss
 //import "../css/auto.scss";
 
@@ -26,9 +27,11 @@ class Automation extends Component {
     event.tabNavs("#autoNavs");
   }
   render() {
-    console.log("auto page render")
     return (
       <main id="autoPage">
+        <Helmet>
+          <title>PRINTIS 자동화 장비</title>
+        </Helmet>
         <PageHeader 
           page="Automation"
           pagebg="http://printis.cdn3.cafe24.com/auto/pageheader.jpg"

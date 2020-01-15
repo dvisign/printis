@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom' 
 import * as board from'../../../service/board';
+import { Helmet } from "react-helmet";
 // import * as event from'service/event';
 import { IoIosArrowForward, IoIosArrowBack, IoIosList, IoIosEye } from "react-icons/io";
 
@@ -53,6 +54,9 @@ class View extends Component {
   render() {
     return (
       <div id="boardView">
+        <Helmet>
+          <title>PRINTIS 뉴스 - {this.state.wr_subject}</title>
+        </Helmet>
         <div id="boardHeader">
           <div id="boardSubject">
             <h2 className="sectionSubTitles">{this.state.wr_subject}</h2>

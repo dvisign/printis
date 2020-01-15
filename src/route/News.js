@@ -5,6 +5,7 @@ import View from '../components/board/news/View';
 import PageHeader from '../components/PageHeader';
 import {MDBContainer} from 'mdbreact';
 import * as event from'../service/event';
+import { Helmet } from "react-helmet";
 // css, scss
 // import "../css/news.scss";
 
@@ -19,6 +20,9 @@ class News extends Component {
   render() {
     return (
       <main id="newPage">
+        <Helmet>
+          <title>PRINTIS 뉴스</title>
+        </Helmet>
         <PageHeader 
           page="news"
           pagebg="http://printis.cdn3.cafe24.com/news/pageheader.jpg"

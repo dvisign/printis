@@ -6,6 +6,7 @@ import GoogleMaps from '../components/GoogleMaps';
 import Swiper from 'react-id-swiper';
 import * as event from'../service/event';
 import { FaDownload } from 'react-icons/fa';
+import { Helmet } from "react-helmet";
 //css, scss 
 //import "../css/about.scss";
 
@@ -312,6 +313,9 @@ class About extends Component {
     }
     return (
       <main id="aboutPage">
+        <Helmet>
+          <title>PRINTIS 회사소개</title>
+        </Helmet>
         <PageHeader 
           page="about"
           pagebg="http://printis.cdn3.cafe24.com/about/pageheader.jpg"

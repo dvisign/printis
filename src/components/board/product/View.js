@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import * as board from'../../../service/board';
+import { Helmet } from "react-helmet";
 
 class View extends Component {
   constructor(props) {
@@ -37,6 +38,9 @@ class View extends Component {
     const optionText = this.state.wr_optionText.split("|");
     return (
       <div id="boardProductView">
+        <Helmet>
+          <title>PRINTIS 제품소개 - {this.state.wr_subject}</title>
+        </Helmet>
         <div id="boardProducts">
           <h2 className="sectionSubTitles">{this.state.wr_subject}</h2>
           <div id="productImg">

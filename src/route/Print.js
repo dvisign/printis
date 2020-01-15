@@ -5,6 +5,7 @@ import View from '../components/board/product/View';
 import PageHeader from '../components/PageHeader';
 import {MDBContainer} from 'mdbreact';
 import * as event from'../service/event';
+import { Helmet } from "react-helmet";
 // css, scss
 // import "../css/print.scss";
 
@@ -26,9 +27,11 @@ class Print extends Component {
     event.tabNavs("#printNavs");
   }
   render() {
-    console.log("print page render")
     return ( 
       <main id="printPage">
+        <Helmet>
+          <title>PRINTIS 인쇄장비</title>
+        </Helmet>
         <PageHeader 
           page="print"
           pagebg="http://printis.cdn3.cafe24.com/print/pageheader.jpg"

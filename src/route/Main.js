@@ -23,7 +23,7 @@ class Main extends Component {
     return (
       <main id="mainPage">
         <Helmet>
-          <title>Printis</title>
+          <title>PRINTIS</title>
         </Helmet>
         <section id="mainBanner">
           <MDBContainer id="bannerTitle">
