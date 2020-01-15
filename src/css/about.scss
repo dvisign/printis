@@ -1,0 +1,437 @@
+#aboutPage {
+  opacity: 0;
+  // 경영철학
+  #philosophyConts {
+    .philosophyItems {
+      float:left;
+      width: calc(100% / 3);
+      @media(max-width:992px) {
+        img {
+          max-width:80px;
+        }
+      }
+      @media(max-width:768px) {
+        width:50%;
+        &:last-child {
+          float: none;
+          display: inline-block;
+          width: 100%;
+          margin-top: 10%;
+        }
+      }
+      p {
+        margin-bottom: 0;
+      }
+      .philosophyImg {
+        margin-bottom: 25px;
+      }
+      .philosophyTit {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      .philosophyTxt {
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+    }
+  }
+  // CI소개
+  #aboutCi {
+    .container {
+      border-top: 1px solid #e1e1e1;
+      border-bottom: 1px solid #e1e1e1;
+      #ciConts {
+        .ciItems {
+          float:left;
+          width:50%;
+          @media(max-width:768px) {
+            float:none;
+            width: 100%;
+          }
+          #ciImgs {
+            padding-top: 9%;
+            img {
+              width: 100%;
+              max-width: 90%;
+            }
+            @media(max-width: 768px) {
+              padding-top: 0;
+              padding-bottom: 10%;
+              img {
+                max-width: 65%;
+              }
+            }
+          }
+          p {
+            margin-bottom: 0;
+            color:#686868;
+          }
+          .ciItemTxt {
+            text-align: left;
+            display: inline-block;
+            #ciSlogan {
+              font-size: 1.3rem;
+              font-weight: 600;
+              position: relative;
+              padding-bottom: 17px;
+              &:after {
+                content:"";
+                display: block;
+                width: 60px;
+                height:3px;
+                background:#ffcd00;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+              }
+            }
+            #ciSurpotTxt {
+              margin-top: 17px;
+              font-size: 0.95rem;
+              font-weight: 500;
+              margin-bottom: 10px;
+            }
+            .ciDownload {
+              border:1px solid #bbb;
+              font-size: 0.7rem;
+              padding: 10px 12px;
+              color:#bbb;
+              background:#fff;
+              transition: 0.5s;
+              margin-right: 10px;
+              svg {
+                margin-bottom: 2px;
+                margin-right: 5px;
+              }
+              &:hover {
+                background:#ffcd00;
+                border: 1px solid #ffcd00;
+                color:#fff
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // CEO 인사말
+  #aboutGreetings {
+    #greetingConts {
+      text-align: left;
+      .sectionSubTitles {
+        font-weight: 600;
+        margin-bottom: 5%;
+      }
+      .greetingTxt {
+        word-break: keep-all;
+        color:#686868;
+        font-size: 0.95rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+      }
+      .ceoNames {
+        text-align: right;
+        font-size: 0.87rem;
+        font-weight: 500;
+        span {
+          position: relative;
+          top: 10px;
+          margin-right: 10px;
+          @media(max-width:992px) {
+            top: 7px;
+          }
+        }
+        @media(max-width:992px) {
+          img {
+            max-width:150px
+          }
+        }
+      }
+    }
+  }
+  // 연혁
+  #aboutHistory {
+    background-image:url("http://printis.cdn3.cafe24.com/about/historyBg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    #historyConts {
+      text-align: left;
+      position: relative;
+      .historyLines {
+        color:#686868;
+        &:nth-child(1) {
+          .lines {
+            top: 15px;
+          }
+        }
+        &:nth-child(2) {
+          .lines {
+            top: 0;
+          }
+        }
+        &:nth-child(3) {
+          .lines {
+            top: 0;
+          }
+        }
+        &:nth-child(4) {
+          .lines {
+            bottom: 35px;
+          }
+        }
+        .historyYears {
+          float:left;
+          width:23%;
+          font-size: 1.326rem;
+          font-weight: 500;
+          @media(max-width:992px) {
+            width: 15%;
+          }
+          @media(max-width:576px) {
+            width:20%;
+            position: relative;
+            top: -3px;
+          }
+        }
+        .historyMonth {
+          float: left;
+          width: 77%;
+          position: relative;
+          @media(max-width:992px) {
+            width: 85%;
+          }
+          @media(max-width:576px) {
+            width:80%;
+          }
+          &::before {
+            content:" ";
+            display: block;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color:#ffcd00;
+            top: 7.5px;
+            left: -7.5px;
+            z-index: 1;
+            @media(max-width:992px) {
+              top: 4px;
+            }
+            @media(max-width:768px) {
+              width: 10px;
+              height: 10px;
+              left: -5px;
+              top: 6.5px;
+            }
+            @media(max-width:576px) {
+              top: 5px;
+            }
+          }
+          .lines {
+            position: absolute;
+            display: block;
+            width: 1px;
+            height:100%;
+            background: #000;
+            left: 0;
+          }
+          .historyDetail {
+            padding-bottom: 5px;
+            .historyDate {
+              float:left;
+              width:40%;
+              padding-left: 160px;
+              position: relative;
+              font-weight: 500;
+              @media(max-width:992px) {
+                padding-left: 130px;
+              }
+              @media(max-width:768px) {
+                padding-left: 75px;
+                width: 36%;
+              }
+              @media(max-width:576px) {
+                padding-left: 10px;
+              }
+              .line2 {
+                position: absolute;
+                display: block;
+                width: 115px;
+                border-bottom: 1px dotted #898989;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                @media(max-width:992px) {
+                  width:90px;
+                }
+                @media(max-width:768px) {
+                  width: 50px;
+                }
+                @media(max-width:576px) {
+                  display: none;
+                }
+                &::after {
+                  display: block;
+                  content:"";
+                  position: absolute;
+                  left: 110px;
+                  width:15px;
+                  height: 15px;
+                  border-radius: 50%;
+                  background-color: #898989;
+                  transform: translateY(-45%);
+                  @media(max-width:992px){
+                    left: 85px;
+                  }
+                  @media(max-width: 768px) {
+                    left: 50px;
+                    height: 10px;
+                    width: 10px;
+                  }
+                }
+              }
+            }
+            .historyTexts {
+              float:left;
+              width:60%;
+              font-size: 0.9rem;
+              padding-top: 2px;
+              @media(max-width:768px) {
+                width: 64%;
+              }
+              div {
+                padding-bottom: 5px;
+                &:last-child {
+                  padding-bottom: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // 수상
+  #aboutAwards {
+    .container {
+      border-top: 1px solid #e1e1e1;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    #awardList {
+      .swiper-container {
+        padding:10px 0 100px 0;
+        height: 590px;
+        @media(max-width:1200px) {
+          height: 450px;
+          padding:0 0 50px 0;
+        }
+        .swiper-wrapper {
+          height: 100%;
+          .swiper-slide {
+            height: 100%;
+          }
+          img {
+            width:100%;
+            max-width: 200px;
+            box-shadow: 4px 5px 11px 3px rgba(0,0,0,0.5);
+            -webkit-box-shadow : 4px 5px 11px 3px rgba(0,0,0,0.5);
+            -moz-box-shadow : 4px 5px 11px 3px rgba(0,0,0,0.5);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @media(max-width:1200px) {
+              max-width: 150px;
+            }
+            @media(max-width:992px) {
+              max-width: 100px;
+            }
+          }
+          .swiper-slide-active {
+            padding-top: 0;
+            img {
+              max-width: 250px;
+              @media(max-width:1200px) {
+                max-width: 230px;
+              }
+              @media(max-width:992px) {
+                max-width: 180px;
+              }
+            }
+          }
+        }
+        .swiper-button-next {
+          color:#000;
+          &:after {
+            font-size: 1rem;
+          }
+        }
+        .swiper-button-prev {
+          color:#000;
+          &:after {
+            font-size: 1rem;
+          }
+        }
+        .swiper-pagination {
+          bottom: 0;
+          .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: #939495;
+          }
+        }
+      }
+    }
+  }
+  // 파트너
+  #partnerLists {
+    li {
+      float:left;
+      width: calc(100% / 4);
+      margin-bottom: 80px;
+      &:nth-child(13),
+      &:nth-child(14),
+      &:nth-child(15) {
+        margin-bottom: 0;
+      }
+      @media(max-width:992px) {
+        width:calc(100% / 3);
+      }
+      @media(max-width:768px) {
+        margin-bottom: 40px;
+      }
+      @media(max-width:576px) {
+        width: 50%;
+        &:nth-child(13),
+        &:nth-child(14) {
+          margin-bottom: 40px;
+        }
+      }
+      img {
+        height: 36px;
+        @media(max-width:1200px) {
+          height: 28px;
+        }
+        @media(max-width:768px) {
+          height: 20px;
+        }
+        @media(max-width: 576px) {
+          height:17px
+        }
+      }
+    }
+  }
+  // 오시는길
+  #locations {
+    padding-top: 0;
+    padding-bottom: 0;
+    .mapArea {
+      height: 600px;
+      @media(max-width:992px) {
+        height: 400px;
+      }
+    }
+  }
+}

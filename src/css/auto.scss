@@ -1,0 +1,9 @@
+#autoPage {
+  opacity: 0;
+  // 탭 네비게이션
+  #autoNavList {
+    li {
+      width: calc(100% / 3);
+    }
+  }
+}

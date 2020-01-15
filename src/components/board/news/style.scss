@@ -1,0 +1,201 @@
+// 리스트 스타일
+.boardListConts {
+  #emptyList {
+    margin-top: 6.3065%;
+    margin-bottom: calc(6.3065% + 20px);
+  }
+  .boardLists {
+    min-height: 600px;
+    margin-top: 6%;
+    .boardItems {
+      float: left;
+      width: 33.33333%;
+      padding: 0 10px;
+      @media(max-width:992px) {
+        width: 50%;
+      }
+      @media(max-width:480px) {
+        float: none;
+        width: 100%;
+      }
+      .boardItemsContents {
+        margin-top: 3%;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        position: relative;
+        a {
+          display: block;
+          width: 100%;
+          color:#000;
+          font-weight: 600;
+          font-size: 0.785rem;
+          .boardListSubject {
+            position: absolute;
+            width: 100%;
+            padding: 10px;
+            background-color:rgba(0,0,0,0.5);
+            color:#fff;
+            bottom: 0;
+            .wr_dateTimes {
+              font-size: 0.8em;
+              font-weight: 400;
+              margin: 0 auto;
+            }
+            .wr_subjects {
+              margin: 0 auto;
+              position: relative;
+              .newLists {
+                position: absolute;
+                bottom: 0;
+                margin-left: 7px;
+                img {
+                  width: 20px;
+                }
+              }
+            }
+          }
+          .boardListThumbs {
+            overflow: hidden;
+            img {
+              transition: 0.5s;
+              width: 100%;
+            }
+            &:hover {
+              img {
+                transform: scale(1.2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 페이지네이션 스타일
+.pager {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 6%;
+  * {
+    vertical-align: middle;
+  }
+  .pagerLists {
+    display: inline-block;
+    .pagerItmes {
+      display: inline-block;
+      a {
+        display: block;
+        padding:0 7px;
+        margin:0 5px;
+      }
+      span {
+        display: block;
+        padding:0 7px;
+        margin:0 5px;
+        font-size: 0.85rem;
+      }
+      .pagerActive {
+        background:#ffcc00;
+        color:#fff;
+      }
+    }
+  }
+  .notPage {
+    color:#ccc;
+  }
+  button {
+    background-color: transparent;
+  }
+  a {
+    color:#000;
+  }
+}
+// 뷰 스타일
+#boardView {
+  margin-top: 10.82%;
+  margin-bottom: 12.618%;
+  p {
+    margin-bottom: 0;
+  }
+  #boardHeader {
+    margin-bottom: 5.865%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid #ccc;
+    #boardSubject {
+      .sectionSubTitles {
+        font-weight: 600;
+        margin-bottom: 0;
+        font-size: 1rem;
+      }
+    }
+    #writeInfo {
+      margin-top: 1rem;
+      p {
+        float:left;
+        font-size: 0.686rem;
+        font-weight: 400;
+        color:rgb(109, 109, 109);
+        padding-right: 10px;
+        span {
+          margin-right: 5px;
+        }
+        &:last-child {
+          float:right;
+        }
+      }
+    }
+  }
+  #boardContents {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding-bottom: 5.865%;
+    border-bottom: 1px solid #ccc;
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+  #boardNextPrevLink {
+    margin-top: 2.432%;
+    a {
+      font-size: 0.6rem;
+      display: block;
+      border:1px solid #ccc;
+      padding:5px 10px;
+      color:#373737;
+      transition: 0.5s;
+      background:#fff;
+      &:hover {
+        background:#ffcc00;
+        color:#fff;
+        border:1px solid #ffcc00;
+      }
+    }
+    .nextprevLink {
+      float:left;
+      margin-right: 5px;
+    }
+    #listLink {
+      float:right;
+      svg {
+        margin-bottom: 4px;
+        font-size: 0.8rem;
+        margin-right: 5px;
+      }
+    }
+    #prevLinks {
+      svg {
+        margin-bottom: 3px;
+        font-size: 0.7rem;
+        margin-right: 3px;
+      }
+    }
+    #nextLinks {
+      svg {
+        margin-bottom: 3px;
+        font-size: 0.7rem;
+        margin-left: 3px;
+      }
+    }
+  }
+}
