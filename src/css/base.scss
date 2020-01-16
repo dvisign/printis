@@ -277,6 +277,11 @@ a:hover {text-decoration:none}
   .footerHead {
     border-bottom: 2px solid #fff;
     padding-bottom: 10px;
+    a {
+      img {
+        margin-bottom: 8px;
+      }
+    }
     span {
       font-weight: 600;
       line-height: 1.8;
