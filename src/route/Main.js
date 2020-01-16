@@ -144,7 +144,9 @@ class NewsList extends Component {
         <div id="newsThumbs">
         {this.state.newsLatest.length !== 0 ? (
           <div>
-            <img src={this.state.selectImg} alt={this.state.selectAlt} />
+            <NavLink to={"/News/news/1/"+this.state.selectid}>
+              <img src={this.state.selectImg} alt={this.state.selectAlt} />
+            </NavLink>
           </div>
         ) : (
           <div>
@@ -155,7 +157,7 @@ class NewsList extends Component {
         <div className="newsLists">
           <div>
             <h2 className="sectionSubTitles">
-              <NavLink to="/News/news/1">NEWS</NavLink>
+              <NavLink to="">NEWS</NavLink>
             </h2>
           </div>
           {this.state.newsLatest.length !== 0 ? (
