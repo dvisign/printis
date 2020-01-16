@@ -186,7 +186,8 @@ a:hover {text-decoration:none}
       #mNavList {
         li {
           a {
-            color:#000
+            color:#000;
+            display: block;
           }
           .navActive {
             color:#ffcc00;
