@@ -16,4 +16,4 @@ app.use(serve(path.resolve(__dirname, '../build/')));
 // 요청받은 경로가 파일들이 아니라면, 해당 경로를 위한 서버사이드 렌더링을 해줍니다
 app.use(render);
 
-app.listen(3001);
+app.listen(80);

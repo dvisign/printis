@@ -34,7 +34,7 @@ class Print extends Component {
         </Helmet>
         <PageHeader 
           page="print"
-          pagebg="http://printis.cdn3.cafe24.com/print/pageheader.jpg"
+          pagebg="http://printis.cdn3.cafe24.com/main/MainBanner.jpg"
           pageText="인쇄장비"
           title="PRINTIS 인쇄장비"
         />

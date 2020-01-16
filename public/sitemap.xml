@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://printis.co.kr</loc><priority>0.5</priority></url>
+<url><loc>http://printis.co.kr/About</loc><priority>0.5</priority></url>
+<url><loc>http://printis.co.kr/Print/prints/print</loc><priority>0.5</priority></url>
+<url><loc>http://printis.co.kr/Print/prints/label</loc><priority>0.5</priority></url>
+<url><loc>http://printis.co.kr/Print/prints/engraving</loc><priority>0.5</priority></url>
+<url><loc>http://printis.co.kr/Print/prints/dry</loc><priority>0.5</priority></url>
+<url><loc>http://printis.co.kr/Automation/autos/touch</loc><priority>0.5</priority></url>
+<url><loc>http://printis.co.kr/Automation/autos/robot</loc><priority>0.5</priority></url>
+<url><loc>http://printis.co.kr/Automation/autos/auto</loc><priority>0.5</priority></url>
+<url><loc>http://printis.co.kr/News/news</loc><priority>0.5</priority></url>
+</urlset>

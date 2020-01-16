@@ -34,7 +34,7 @@ class Automation extends Component {
         </Helmet>
         <PageHeader 
           page="Automation"
-          pagebg="http://printis.cdn3.cafe24.com/auto/pageheader.jpg"
+          pagebg="http://printis.cdn3.cafe24.com/main/MainBanner.jpg"
           pageText="자동화 장비"
           title="PRINTIS 자동화 장비"
         />

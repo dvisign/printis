@@ -28,7 +28,7 @@ class Main extends Component {
         <section id="mainBanner">
           <MDBContainer id="bannerTitle">
             <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-              <h2 className="sectionTitles">새로움을 즐기며<br/> 새로운 기술을 선도하는 기업</h2>
+              <h1 className="sectionTitles">새로움을 즐기며<br/> 새로운 기술을 선도하는 기업</h1>
               <p className="sectionSubTitles">Printis is creative technology</p>
             </ScrollAnimation>
           </MDBContainer>
@@ -155,7 +155,7 @@ class NewsList extends Component {
         <div className="newsLists">
           <div>
             <h2 className="sectionSubTitles">
-              <NavLink to="/News/news">NEWS</NavLink>
+              <NavLink to="/News/news/1">NEWS</NavLink>
             </h2>
           </div>
           {this.state.newsLatest.length !== 0 ? (
