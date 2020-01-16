@@ -35,7 +35,7 @@ class Nav extends Component {
             <div className="clear">
               <div id="logos">
                 <Link to={"/"}>
-                  <img src="http://printis.cdn3.cafe24.com/public/NavLogo.png" alt="printis 로고"/>
+                  <img src="http://printis.cdn3.cafe24.com/public/NavLogo.png" alt="PRINTIS"/>
                 </Link>
               </div>
               <ul id="navList" className="navLists">
