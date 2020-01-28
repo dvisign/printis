@@ -3,6 +3,7 @@ const serve = require('koa-static');
 const path = require('path');
 const fs = require('fs');
 const app = new Koa();
+const port = process.env.PORT || 8080;
 
 const render = require('./render');
 
@@ -15,5 +16,5 @@ app.use((ctx, next) => {
 app.use(serve(path.resolve(__dirname, '../build/')));
 // 요청받은 경로가 파일들이 아니라면, 해당 경로를 위한 서버사이드 렌더링을 해줍니다
 app.use(render);
-
-app.listen(80);
+console.log("port =>" + port);
+app.listen(port);
